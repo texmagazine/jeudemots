@@ -1,0 +1,145 @@
+body {
+    background-image: url("image/fondcolore.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+#menu {
+  margin-top: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  width: 60%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+
+#menu button {
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffffcc;
+  transition: 0.2s;
+}
+
+#menu button:hover {
+  background-color: #fff;
+}
+
+#container {
+  display: none;
+  margin-top: 40px;
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+
+#phrase {
+  margin: 30px;
+  font-size: 40px;
+  letter-spacing: 12px;
+}
+
+.case {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;          /* largeur du carré */
+  height: 55px;         /* hauteur du carré */
+  margin: 6px;
+  font-size: 40px;
+  font-weight: bold;
+  border: 3px solid #000;   /* bordure du carré */
+  border-radius: 8px;       /* coins légèrement arrondis */
+  background-color: #ffffffcc; /* fond blanc semi-transparent */
+}
+
+
+.espace-large {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+}
+
+
+.revelee {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+
+
+#lettres button {
+  padding: 15px;
+  margin: 8px;
+  width: 55px;
+  height: 55px;
+  font-size: 26px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+#lettres button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+#indice {
+  margin: 15px;
+  font-size: 24px;
+}
+
+
+
+#controls {
+  margin-top: 20px;
+}
+
+#controls button {
+  padding: 18px 30px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* Animation zoom */
+@keyframes zoomBravo {
+  0%   { transform: scale(1); opacity: 0.2; }
+  50%  { transform: scale(1.6); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+#message {
+  margin: 0 0 20px 0;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #d40000;
+}
+
+/* Classe qui déclenche l’animation */
+.zoom {
+  animation: zoomBravo 0.5s ease-out;
+}
+
